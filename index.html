@@ -31,7 +31,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">About Me</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/TimKraemer.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/Website Image.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +47,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -74,7 +71,7 @@
           <div class="subheading mb-5">Belmont, California |
             <a href="mailto:tikraeme@ucsc.edu">tikraeme@ucsc.edu</a>
           </div>
-          <p class="mb-5">Hello! I am a current senior at the <b>University of California, Santa Cruz</b> studying <b>Computer Engineering</b>. <br><br> I have interests in Software Engineering, Distributed Systems, Artificial Intelligence/ML, Web-Development, and Robotics. <br><br> My current workload includes Database Systems (CSE 180) where I will learn the intricacies of PostgreSQL, Senior Design Project I (CSE 123A), and Accelerated German (GER 1A). Next quarter I plan on taking Applied Machine Learning: Deep Learning (CSE 144), and Senior Design Project II (CSE 123B). <br><br> I plan on joining a Masters in Computer Science & Engineering program in the Fall of 2024. <br><br> Below are links to my <b>LinkedIn</b>, <b>GitHub</b>, and download link to my <b>resume</b>.</p>
+          <p class="mb-5">Hello! I am an incoming Masters student at the <b>University of California, San Diego</b> studying <b>Computer Science and Engineering</b> <br><br> I have interests in <b>Software Systems Engineering</b>, <b>Network Design</b>, <b>Distributed Systems</b>, and <b>Artificial Intelligence</b> <br><br> Below are links to my <b>LinkedIn</b>, <b>GitHub</b>, and download link to my <b>resume</b></p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/tim-krae/">
@@ -113,13 +110,16 @@
               <h3 class="mb-0">Embedded Research Intern</h3>
               <div class="subheading mb-3">JLab Sensing @ UCSC</div>
               <p>
-                - Collaborated with a team of researchers and graduate students on a large embedded project, implementing low-power solutions interfacing temperature and humidity sensors into a greenhouse actuation system
+                - Engineered a robust data pipeline for a greenhouse temperature monitoring system using C/C++, utilizing Git and followed Agile methodologies throughout the development process
                 <br>
                 <br>
-                - Wrote and tested custom firmware libraries for the HDC2021 Temperature and Humidity sensors
+                - Devised a custom temperature interface library, as well as a custom I2C communication library for fast data communication.
                 <br>
                 <br>
-                - Designed and implemented using standard communication protocols such as UART, SPI, I2C, ModBus, in addition to low-power LoRa transmission to achieve 5x less power consumption compared to the standard monitoring system already in place
+                - Conceptualized and implemented a scalable communication framework using various protocols (UART, SPI, I2C, ModBus), showcasing expertise in network programming and distributed systems.
+                <br>
+                <br>
+                - Optimized software for low-power operation, incorporating LoRa RF transmission to achieve a 90% reduction in power consumption compared to standard monitoring systems.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -132,9 +132,9 @@
               <h3 class="mb-0">Verilog Logic Design Tutor</h3>
               <div class="subheading mb-3">University of California, Santa Cruz</div>
               <p>
-                - Tutored a class of approximately 100 students in the University’s Logic Design class, aiding those struggling with lab assignments and performing unit tests for lab checkoffs
+                - Taught a total of 500 students over the course of 2023-2024 in the University's Logic Design class, supporting those struggling with lab assignments and performing unit tests for lab checkoffs.
                 <br><br>
-                - Labs are written in structural verilog using the Vivado interface and the Basys 3 Artyx-7 FPGA board. Topics also included state machine design, sequential logic, counters, VGA protocol, among other logic design techniques.
+                - Used Structural Verilog and the Vivado interface, pulling from topics that include state machine design and minimization, sequential logic, hardware counters, the VGA protocol, and other logic design techniques such as k-maps and truth tables.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -147,11 +147,9 @@
               <h3 class="mb-0">Rocketry Team - Deployment & Payload Division</h3>
               <div class="subheading mb-3">University of California, Santa Cruz</div>
               <p>
-                - Designed the deployment subsystem for the rocket’s payload in collaboration with other engineers, leading to successful
-                deployments during 2021-2022 NASA’s Student Launch
+                - Modeled the deployment subsystem for rocket payload, leading to successful launches during the 2021-22 NASA's Student Launch.
                 <br><br>
-                - Developed and performed tests on deployment electronics and source code in C, reducing altitude measurement inaccuracies
-                by 20% as well as shortening payload deployment time
+                - Developed and performed tests on deployment electronics and source code in C, reducing altitude measurement inaccuracies by 20% as well as shortening payload deployment time.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -169,6 +167,40 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
+              <h3 class="mb-0">IoT Water Consumption Meter</h3>
+              <div class="subheading mb-3">NginX, Flask, AWS, PostgreSQL, Swift, RESTful API</div>
+              <div>
+                I acted as a team lead for the UCSC Senior Capstone Design project. With my team, we designed and prototyped an IoT water consumption faucet attachment that measures and records isolated water flow, providing useful data metrics and recommendations to consumers via IOS app.
+                <br><br>
+                I spearheaded the development of the webserver used on an AWS LightSail instance, utilizing NginX as a reverse proxy service to a Python Flask backend, RESTful APIs, for data storage, retrieval, and metric updates interfaced with a postgreSQL database.
+                <br><br>
+                Innovated an IOS specific app using Swift and SwiftUI, incorporating a login procedure and JWT token verification to display user specific data and matrics.
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary"><a id="weather-station-link" href="https://github.com/TimKraemer1/Weather-Station">Project's GitHub</a>&emsp;<a href="https://timkraemer.pythonanywhere.com/">Website</a></span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">PantryAI</h3>
+              <div class="subheading mb-3">Node.js, Express.js, Nginx, AWS, MongoDB, RESTful API, React Native</div>
+              <div>
+                I prototyped and implemented a comprehensive pantry management system that tracks inventory, provides recipe recommendations, and integrates with a React application for user interaction.
+                <br><br>
+                Programmed a robust backend service using Node.js and Express, handling CRUD operations for pantry items, user authentication, and third-party API integrations.
+                <br><br>
+                Adopted OpenAI API to generate personalized recipe suggestions based on current pantry contents and user-defined parameters.
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary"><a id="weather-station-link" href="https://github.com/TimKraemer1/Weather-Station">Project's GitHub</a>&emsp;<a href="https://timkraemer.pythonanywhere.com/">Website</a></span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
               <h3 class="mb-0">Smart Weather Station</h3>
               <div class="subheading mb-3">Flask, HTML, CSS, Pandas, HTTP, Ajax JS, Arduino</div>
               <div>
@@ -181,37 +213,6 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary"><a id="weather-station-link" href="https://github.com/TimKraemer1/Weather-Station">Project's GitHub</a>&emsp;<a href="https://timkraemer.pythonanywhere.com/">Website</a></span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">American Sign Language (ASL) Translation Glove</h3>
-              <div class="subheading mb-3">C, UART</div>
-              <div>
-                Designed a glove-based ASL recognition system that has the capability of detecting specific ASL poses for different letters and numbers, and accurately output the corresponding value that is currently being signed
-                <br><br>
-                Created using resistance based flex sensors on glove fingers, a modified binary tree and traversal algorithm to efficiently store possible finger position combinations, and used hardware and software filtering.
-              </div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><a id="asl-glove-link" href="https://github.com/TimKraemer1/ASL-Translational-Glove">Project's GitHub</a></span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Desktop Cursor Manipulation using Hand Tracking</h3>
-              <div class="subheading mb-3">Python, MediaPipe, OpenCV, PyAutoGUI</div>
-              <div>
-                Created a tool that allows for the movement and manipulation of a desktop mouse icon using hand tracked movements and a web-cam. Most of the project duration was spent increasing tolerance for smaller hand movements tailoring accuracy
-                <br><br>
-                This script was programmed using Python3, as well as several other Python libraries such as MediaPipe for hand landmark tracking, OpenCV for the web-camera operations, and PyAutoGUI for access to desktop features for manipulation
-                <br><br>
-              </div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><a id="weather-station-link" href="https://github.com/TimKraemer1/Hand-Tracking-2022">Project's GitHub</a></span>
             </div>
           </div>
 
@@ -236,41 +237,46 @@
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of California, Santa Cruz</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div><b>Computer Engineering</b></div>
-              <p>GPA: 3.90 </p>
-              <div><b>Awards and Honors: </b>Deans Honor's List, Tau Beta Pi Honors Society <br><br></div>
-              <div><b>Highlighted Coursework:</b></div>
-              <ul>
-                <li>Discrete Mathematics, <b>A</b></li>
-                <li>Data Structures & Algorithms, <b>A</b></li>
-                <li>Computer Architecture, <b>A-</b></li>
-                <li>Control Theory, <b>A</b></li>
-                <li>Sensors & Sensing Technology, <b>B+</b></li>
-                <li>Logic Design, <b>A</b></li>
-                <li>Artificial Intelligence, <b>A</b></li>
-                <li>Embedded Systems Design, <b>A+</b></li>
-                <li>Database Systems I, <b>In Progress</b></li>
-                <li>Senior Design Capstone I, <b>In Progress</b></li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2020 - June 2024</span>
-            </div>
-          </div>
-
           <div class="resume-item d-flex flex-column flex-md-row" id="education">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">M.S. in Computer Science and Engineering (Expected)</h3>
+              <h3 class="mb-0">University of California, San Diego</h3>
+              <div class="subheading mb-3">Masters of Science</div>
+              <div><b>Computer Science and Engineering</b></div>
+              <div><b>Highlighted Coursework</b></div>
+              <ul>
+                <li>Principles of Software Engineering (CSE 210), <b>In progress</b></li>
+                <li>Computer Security (CSE 227), <b>In progress</b></li>
+                <li>Parallel Computation (CSE 260), <b>In progress</b></li>
+              </ul>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">September 2024 - June 2026</span>
             </div>
           </div>
 
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of California, Santa Cruz</h3>
+              <div class="subheading mb-3">Bachelors of Science</div>
+              <div><b>Computer Engineering</b></div>
+              <p>GPA: 3.90 </p>
+              <div><b>Awards and Honors: </b>Deans Honor's List, Tau Beta Pi Honors Society <br><br></div>
+              <div><b>Highlighted Coursework:</b></div>
+              <ul>
+                <li>Data Structures & Algorithms (CSE 101), <b>A</b></li>
+                <li>Computer Architecture (CSE 120), <b>A-</b></li>
+                <li>Logic Design (CSE 100), <b>A</b></li>
+                <li>Artificial Intelligence (CSE 140), <b>A</b></li>
+                <li>Embedded Systems Design (CSE 121), <b>A+</b></li>
+                <li>Database Systems (CSE 180), <b>B+</b></li>
+                <li>Senior Design Capstone I (CSE 123A), <b>B+</b></li>
+                <li>Senior Design Capstone II (CSE 123B), <b>A-</b></li>
+              </ul>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2020 - June 2024</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -285,11 +291,11 @@
                 C &nbsp; <i class="devicon-c-plain colored"></i>, &nbsp;
                 C++ &nbsp; <i class="devicon-cplusplus-plain colored"></i>, &nbsp;
                 Python &nbsp; <i class="devicon-python-plain colored"></i>, &nbsp;
-                PostgreSQL &nbsp; <i class="devicon-postgresql-plain colored"></i>, &nbsp;
-                MATLAB &nbsp; <i class="devicon-matlab-plain colored"></i>, &nbsp;
+                JavaScript &nbsp; <i class="devicon-javascript-plain colored"></i>, &nbsp;
+                SQL
+                Swift &nbsp; <i class="devicon-swift-plain colored"></i>, &nbsp;
                 HTML &nbsp; <i class="devicon-html5-plain colored"></i>, &nbsp;
                 CSS &nbsp; <i class="devicon-css3-plain colored"></i>, &nbsp;
-                Arduino &nbsp; <i class="devicon-arduino-plain colored"></i>
               </div>
             </div>
           </div>
@@ -300,11 +306,10 @@
               <div class="subheading mb-3">
                 Git &nbsp; <i class="devicon-git-plain colored"></i>, &nbsp;
                 Linux &nbsp; <i class="devicon-linux-plain colored"></i>, &nbsp;
-                Uart &nbsp;,
-                GDB &nbsp;,
-                Valgrind &nbsp;,
-                Makefile &nbsp;,
-                HTTP Requests &nbsp;
+                PostgreSQL &nbsp; <i class="devicon-postgresql-plain colored"></i>, &nbsp;
+                RESTful API, 
+                PostMan,
+                NginX &nbsp; <i class="devicon-nginx-plain colored"></i>, &nbsp;
               </div>
             </div>
           </div>
@@ -314,11 +319,12 @@
               <h3 class="mb-0">Frameworks & Libraries </h3>
               <div class="subheading mb-3">
                 Flask &nbsp; <i class="devicon-flask-plain colored"></i>, &nbsp;
+                Node.js &nbsp; <i class="devicon-nodejs-plain colored"></i>, &nbsp;
+                Express.js,
+                Psycopg2,
                 Pandas &nbsp; <i class="devicon-pandas-plain colored"></i>, &nbsp;
                 MediaPipe, &nbsp;
-                Selenium &nbsp; <i class="devicon-selenium-plain colored"></i>, &nbsp;
                 OpenCV &nbsp; <i class="devicon-opencv-plain colored"></i>, &nbsp;
-                VADER &nbsp;
             </div>
           </div>
         </div>
