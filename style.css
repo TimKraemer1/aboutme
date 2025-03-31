@@ -1,0 +1,188 @@
+html,
+body {
+  background-color: black;
+}
+
+.terminal-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  height: 600px;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-item {
+  font-family: "Shared Tech Mono", monospace;
+  font-size: 15px;
+}
+
+.dropdown-menu {
+  background-color: #212529 !important; /* Dark background */
+}
+
+.dropdown-item {
+  color: white !important; /* Light text */
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40 !important; /* Slightly lighter grey */
+  color: white !important; /* Ensure text stays visible */
+}
+
+.selection-text {
+  text-align: center;
+  padding: 20px;
+  color: #a1a1a1;
+}
+
+.page-title {
+  color: #a1a1a1;
+}
+
+.toggle-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.toggle {
+  width: 30px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 5px;
+}
+.toggle::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: 0.3s;
+}
+.toggle.active {
+  background-color: #4caf50;
+}
+.toggle.active::before {
+  transform: translateX(15px);
+}
+
+.aboutme-text {
+  color: #a1a1a1;
+}
+
+.skills-section {
+  color: #a1a1a1;
+}
+
+.card {
+  border-radius: 1px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.skills-title {
+  font-family: "Shared Tech Mono", monospace;
+}
+
+.aboutme-title {
+  font-family: "Shared Tech Mono", monospace;
+}
+
+.vr {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5); /* Light grey */
+  margin: auto 10px;
+}
+
+.education-tile {
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+.education-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.university-logo {
+  max-height: 150px;
+  object-fit: contain;
+}
+.degree-title {
+  font-weight: bold;
+}
+.education-date {
+  color: #666;
+  font-style: italic;
+}
+.education-details {
+  margin-top: 15px;
+}
+.page-title {
+  margin: 40px 0;
+  font-family: "Share Tech Mono", monospace;
+  border-bottom: 2px solid #343a40;
+  padding-bottom: 10px;
+}
+.badge-courses {
+  background-color: #343a40;
+  color: white;
+  margin: 2px;
+}
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 200px;
+}
+.info-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.project-tile {
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.project-image {
+  max-height: 300px;
+  object-fit: cover;
+}
+.project-title {
+  font-weight: bold;
+  color: #fff;
+}
+.project-date {
+  color: #adb5bd;
+  font-style: italic;
+}
+.page-title {
+  margin: 40px 0;
+  font-family: "Share Tech Mono", monospace;
+  border-bottom: 2px solid #343a40;
+  padding-bottom: 10px;
+}
+.tech-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #adb5bd;
+}
