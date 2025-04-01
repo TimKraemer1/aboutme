@@ -76,8 +76,19 @@ body {
 }
 
 .aboutme-text {
-  color: #a1a1a1;
+  font-family: 'Courier New', monospace;
+  color: white;
 }
+
+.function {
+  color: #6a9955; /* Soft green for functions (like VS Code) */
+}
+
+.aboutme-text p:last-child::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
 
 .skills-section {
   color: #a1a1a1;
@@ -109,6 +120,7 @@ li {
 .education-tile {
   transition: transform 0.3s ease;
   margin-bottom: 30px;
+  
 }
 .education-tile:hover {
   transform: translateY(-5px);
@@ -118,15 +130,23 @@ li {
   max-height: 150px;
   object-fit: contain;
 }
-.degree-title {
+
+.university-name {
   font-weight: bold;
 }
+
+.degree-concentration {
+  font-size: 15px;
+  font-style: italic;
+}
+
 .education-date {
   color: #666;
   font-style: italic;
 }
 .education-details {
   margin-top: 15px;
+  margin-left: 50px;
 }
 .page-title {
   margin: 40px 0;

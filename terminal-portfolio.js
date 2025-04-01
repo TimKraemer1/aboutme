@@ -1,4 +1,4 @@
-const asciiArt = `
+const computerAsciiArt = `
      _________
     / ======= \\
    / __________\\
@@ -11,6 +11,7 @@ const asciiArt = `
  / ::::::::::::: \\                  =D-'
 (_________________) 
 `;
+
 
 class TerminalPortfolio extends HTMLElement {
   constructor() {
@@ -210,7 +211,7 @@ class TerminalPortfolio extends HTMLElement {
         </div>
         <div class="terminal-body" id="terminal-body">
           <div class="line ascii-art">
-            <pre>${asciiArt}</pre>
+            <pre>${computerAsciiArt}</pre>
           </div>
           <div class="line">
             Welcome to the interactive portfolio of Tim Kraemer
@@ -253,7 +254,6 @@ class TerminalPortfolio extends HTMLElement {
           <span class="command">skills</span>      - List my technical skills<br>
           <span class="command">employment</span>  - List of current & previous employment<br>
           <span class="command">projects</span>    - Show my project portfolio<br>
-          <span class="command">google</span>      - open a google.com page<br>
           </div>`;
       },
 
@@ -333,14 +333,6 @@ class TerminalPortfolio extends HTMLElement {
           </div>`;
       },
 
-      google: () => {
-        window.open("https://www.google.com", "_blank");
-        return `
-              <div class="output">
-              <p>Opening Google.com in a new tab...</p>
-              </div>
-          `;
-      },
 
       clear: () => {
         this.outputContainer.innerHTML = "";
