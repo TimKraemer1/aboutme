@@ -12,6 +12,41 @@ const computerAsciiArt = `
 (_________________) 
 `;
 
+const bonzaiAsciiArt = `
+       ,.,
+      MMMM_    ,..,
+        "_ "__"MMMMM          ,...,,
+ ,..., __." --"    ,.,     _-"MMMMMMM
+MMMMMM"___ "_._   MMM"_."" _ """"""
+ """""    "" , \\\_.   "_. ."
+        ,., _"__ \\\__./ ."
+       MMMMM_"  "_    ./
+        ''''      (    )
+ ._______________.-'____"---._.
+  \\\                          /
+   \\\________________________/
+   (_)                    (_)
+`;
+
+const quotes = [
+  '"When the mind is nowhere, it is everywhere." - Bodhidharma',
+  '"To seek is to suffer. To seek nothing is bliss." – Bodhidharma',
+  '"Let go, or be dragged." – Zen Proverb',
+  '"Be master of mind rather than mastered by mind." – Zen Proverb',
+  '"A journey of a thousand miles begins with a single step." – Lao Tzu',
+  '"Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment." – Buddha',
+  '"The obstacle is the path." – Zen Proverb',
+  '"Sitting quietly, doing nothing, spring comes, and the grass grows by itself." – Zen Proverb',
+  '"When walking, walk. When eating, eat." – Zen Proverb',
+  '"Before enlightenment, chop wood, carry water. After enlightenment, chop wood, carry water." – Zen Proverb',
+  '"You should sit in meditation for 20 minutes every day—unless you’re too busy. Then you should sit for an hour." – Zen Saying',
+  '"The mind is like water. When it’s turbulent, it’s difficult to see. When it’s calm, everything becomes clear." – Zen Proverb',
+  '"Tension is who you think you should be. Relaxation is who you are." – Chinese Proverb',
+  '"Flow with whatever may happen, and let your mind be free: Stay centered by accepting whatever you are doing. This is the ultimate." – Zhuangzi',
+  '"Awareness is the greatest agent for change." – Eckhart Tolle',
+];
+
+const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 class TerminalPortfolio extends HTMLElement {
   constructor() {
@@ -210,16 +245,18 @@ class TerminalPortfolio extends HTMLElement {
           <div class="terminal-title">tim-kraemer@website:~</div>
         </div>
         <div class="terminal-body" id="terminal-body">
-          <div class="line ascii-art">
-            <pre>${computerAsciiArt}</pre>
+          <div id="initial-content">
+            <div class="line ascii-art">
+              <pre>${computerAsciiArt}</pre>
+            </div>
+            <div class="line">
+              Welcome to the interactive website of Tim Kraemer
+            </div>
+            <div class="line">
+              Type <span class="command">help</span> to see available commands.
+            </div>
+            <div class="line">------------------------------------------</div>
           </div>
-          <div class="line">
-            Welcome to the interactive portfolio of Tim Kraemer
-          </div>
-          <div class="line">
-            Type <span class="command">help</span> to see available commands.
-          </div>
-          <div class="line">------------------------------------------</div>
           <div id="output-container"></div>
           <div class="input-line">
             <div class="input-prefix">
@@ -241,6 +278,7 @@ class TerminalPortfolio extends HTMLElement {
     this.outputContainer = this.shadowRoot.getElementById("output-container");
     this.inputField = this.shadowRoot.getElementById("input-field");
     this.terminalBody = this.shadowRoot.getElementById("terminal-body");
+    this.initialContent = this.shadowRoot.getElementById("initial-content");
 
     // Initialize commands
     this.commands = {
@@ -254,6 +292,7 @@ class TerminalPortfolio extends HTMLElement {
           <span class="command">skills</span>      - List my technical skills<br>
           <span class="command">employment</span>  - List of current & previous employment<br>
           <span class="command">projects</span>    - Show my project portfolio<br>
+          <span class="command">zen</span>         - Displays a random inspirational quote
           </div>`;
       },
 
@@ -333,8 +372,19 @@ class TerminalPortfolio extends HTMLElement {
           </div>`;
       },
 
+      zen: () => {
+        return `
+          <div class="output">
+            <div class="line ascii-art">
+              <pre>${bonzaiAsciiArt}</pre>
+              <p>${getRandomElement(quotes)}<p>
+            </div>
+          </div>`;
+      },
+
 
       clear: () => {
+        this.initialContent.innerHTML = "";
         this.outputContainer.innerHTML = "";
         return "";
       },
@@ -352,7 +402,7 @@ class TerminalPortfolio extends HTMLElement {
         // Create command line element
         const commandLine = document.createElement("div");
         commandLine.className = "input-line";
-        commandLine.innerHTML = `<div class="input-prefix"><span class="prompt">tim-kraemer</span>@<span class="hostname">portfolio</span>:<span class="directory">~</span>$</div> ${command}`;
+        commandLine.innerHTML = `<div class="input-prefix"><span class="prompt">tim-kraemer</span>@<span class="hostname">website</span>:<span class="directory">~</span>$</div> ${command}`;
 
         this.outputContainer.appendChild(commandLine);
 

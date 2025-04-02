@@ -81,7 +81,7 @@ body {
 }
 
 .function {
-  color: #6a9955; /* Soft green for functions (like VS Code) */
+  color: #00ff00; /* Soft green for functions (like VS Code) */
 }
 
 .aboutme-text p:last-child::after {
